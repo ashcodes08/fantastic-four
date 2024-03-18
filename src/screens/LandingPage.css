@@ -1,0 +1,62 @@
+.wrapper {
+    box-sizing: content-box;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-shadow: -2px 2px 4px black,
+                 2px 2px 4px black,
+                 2px -2px 0 black,
+                 -2px -2px 0 black;
+    font-size: 2vw;
+    width: 55%;
+  }
+  
+  .words {
+    overflow: hidden;
+  }
+  
+  #span1 {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #cccccc;
+    animation: spin_words 15s infinite; /* Increased animation duration significantly */
+    z-index:-1;
+  }
+#lp2{
+    z-index:1000;
+}
+  
+  @keyframes spin_words {
+    10% {
+      transform: translateY(-112%);
+    }
+    25% {
+      transform: translateY(-100%);
+    }
+    35% {
+      transform: translateY(-212%);
+    }
+    50% {
+      transform: translateY(-200%);
+    }
+    60% {
+      transform: translateY(-312%);
+    }
+    75% {
+      transform: translateY(-300%);
+    }
+    85% {
+      transform: translateY(-412%);
+    }
+    100% {
+      transform: translateY(-400%);
+    }
+  }
+  
