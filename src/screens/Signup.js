@@ -60,7 +60,7 @@ export default function Signup() {
 
             <div id="loginctr">
         <form onSubmit={handleSubmit}>
-        <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}} id="paymentspageheading">Login</p>
+        <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}} id="paymentspageheading">SignUp</p>
             {/* handleSubmit is a function  */}
             {/* accha agar ab mai mere input fields me onchange attribute nhi du toh kya hoga ?? toh unme ham kuchh type nhi kar paenge . 
             since we already equallled them to credentials.name and etc */}
