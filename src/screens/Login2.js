@@ -65,24 +65,24 @@ export default function Login2() {
             <div id="loginctr">
             
         <form onSubmit={handleSubmit}>
-          <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}} id="paymentspageheading">
-          Professor McGonagall <br/> requests your credentials</p>
+          <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)"}}>
+          Login</p>
           {/* handleSubmit is a function  */}
           {/* accha agar ab mai mere input fields me onchange attribute nhi du toh kya hoga ?? toh unme ham kuchh type nhi kar paenge . 
             since we already equallled them to credentials.name and etc */}
           <div className="mb-3"id="x">
-          <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Email-</p>
+          <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Email-</p>
             <input type="email"  className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email' value={credentials.email} onChange={onChange}/>
           </div>
           <div className="mb-3"id="x">
-          <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Password-</p>
+          <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Password-</p>
             <input type="password" className="form-control" id="exampleInputPassword1" name='password' value={credentials.password} onChange={onChange} />
           </div>
-          <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}} onClick={()=>{
+          <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}} onClick={()=>{
            localStorage.setItem("isAdmin","yes"); 
           }}>i am an admin</button>
-          <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}>Submit</button>
-          <button className='m-3 btn' style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}><Link to="/creatuser" >I am a new user(sign up)</Link></button>
+          <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}>Submit</button>
+          <button className='m-3 btn' style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}><Link to="/creatuser" >I am a new user(sign up)</Link></button>
         </form>
       </div>
    
