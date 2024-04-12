@@ -29,7 +29,8 @@ export default function Ash() {
         {/* this is our parent div */}
       <nav className={`navbar navbar-expand-lg navbar-dark  ${isOpen ? 'show' : ''}`} id="onea">
         <div className="container-fluid" >
-          <Link className="navbar-brand fs-3 fw-bold fst-italic" to="/" id="oneb">Hogwarts-Eats</Link>
+        {(!localStorage.getItem("isAdmin"))?
+          <Link className="navbar-brand fs-3 fw-bold" to="/" id="oneb">V-Lifestyle</Link>:""}
           <button className="navbar-toggler" type="button"  onClick={toggleNavbar}>
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -37,9 +38,9 @@ export default function Ash() {
          
             <ul className="navbar-nav me-auto">
         <li className="nav-item">
-          <Link className="nav-link active fs-3 fw-bold fst-italic" to="/home" id="oneb">Menu</Link>
+          <Link className="nav-link active fs-3 fw-bold" to="/home" id="oneb">Menu</Link>
         </li>
-        <img src={hat} id="landingpageimage" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+        
         {/* <li className="nav-item dropdown">
           <li className="nav-link dropdown-toggle" to="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
@@ -53,21 +54,34 @@ export default function Ash() {
       
       {((localStorage.getItem("authToken")) && (!localStorage.getItem("isAdmin")))?
       <li className="nav-item">
-      <Link className="nav-link active fs-3 fw-bold fst-italic" to="/myOrder" id="oneb">My-orders</Link>
+      <Link className="nav-link active fs-3 fw-bold" to="/myOrder" id="oneb">My-orders</Link>
     </li>
     :""
     }
+{((localStorage.getItem("authToken")) && (localStorage.getItem("isAdmin")))?
+<div className='d-flex'>
+      <li className="nav-item">
+      <Link className="nav-link active fs-3 fw-bold" to="/admin" id="oneb">Orders</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link active fs-3 fw-bold" to="/additem" id="oneb">Add Item</Link>
+    </li>
+    
+    </div>
+    :""
+    }
+
     </ul>
            {(!localStorage.getItem("authToken"))?
             <div className='d-flex'>
-              <Link className="navbar-brand fs-3 fw-bold fst-italic" aria-current="page" to="/login2" id="oneb">Login</Link>
+              <Link className="navbar-brand fs-3 fw-bold" aria-current="page" to="/login2" id="oneb">Login</Link>
               {/* abb hoga kya ki jab home pe click karunga toh home pe jaega but jab login par click karunga toh login pe jaega  */}
-              <Link className="navbar-brand fs-3 fw-bold fst-italic" to="/creatuser" id="oneb">Signup</Link>
+              <Link className="navbar-brand fs-3 fw-bold" to="/creatuser" id="oneb">Signup</Link>
             </div>
           :
           /*ek parent div hai zaroori*/
           <div> 
-            {(!localStorage.getItem("isAdmin"))?<div className='btn bg-white text-success mx-2 fw-bold fst-italic' onClick={()=>{setCartView(true)}}>
+            {(!localStorage.getItem("isAdmin"))?<div className='btn bg-white text-success mx-2 fw-bold' onClick={()=>{setCartView(true)}}>
             My-cart {" "} 
             {/* space diya thda sa  */}
             <Badge pill bg="danger">{data.length}</Badge>
@@ -76,7 +90,7 @@ export default function Ash() {
             }
             
             {cartView?<Modal onClose={()=>{setCartView(false)}}><Cart/></Modal>:null}
-          <div className='btn bg-white text-danger mx-2 fw-bold fst-italic' onClick={handleLogout}>
+          <div className='btn bg-white text-danger mx-2 fw-bold' onClick={handleLogout}>
             Logout
             </div>
             </div>
