@@ -60,31 +60,31 @@ export default function Signup() {
 
             <div id="loginctr">
         <form onSubmit={handleSubmit}>
-        <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}} id="paymentspageheading">SignUp</p>
+        <p style={{"font-size":"4vh","color":"rgb(255, 193, 7)",}}>SignUp</p>
             {/* handleSubmit is a function  */}
             {/* accha agar ab mai mere input fields me onchange attribute nhi du toh kya hoga ?? toh unme ham kuchh type nhi kar paenge . 
             since we already equallled them to credentials.name and etc */}
   <div className="mb-3" id="x">
-  <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Name-</p>
+  <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Name-</p>
     <input type="text" className="form-control" name='name' value={credentials.name} onChange={onChange}/>
   </div>          
   <div className="mb-3"id="x">
-  <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Email-</p>
+  <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Email-</p>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email' value={credentials.email} onChange={onChange} pattern=".*@mnnit.ac\.in.*"/>
   </div>
   <div className="mb-3"id="x">
-  <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Password-</p>
+  <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Password-</p>
     <input type="password" className="form-control" id="exampleInputPassword1" name='password' value={credentials.password} onChange={onChange}/>
   </div>
   <div className="mb-3"id="x">
-  <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">-Adress-</p>
+  <p style={{"font-size":"3vh","color":"#aaaaaa",}}>-Adress-</p>
     <input type="text" className="form-control" id="exampleInputPassword1" name='geolocation' value={credentials.geolocation} onChange={onChange}/>
   </div>
-  <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}} onClick={()=>{
+  <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}} onClick={()=>{
            localStorage.setItem("isAdmin","yes"); 
           }}>i am an admin</button>
-  <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}>Submit</button>
-  <button className='m-3 btn' style={{"background-color":"rgba(255, 193, 7,0)","font-style":"italic","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}><Link to="/login2">Already a User? login instead.</Link></button>
+  <button type="submit" className=" m-3 btn" style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}>Submit</button>
+  <button className='m-3 btn' style={{"background-color":"rgba(255, 193, 7,0)","font-weight":"bold","border-style":"solid","border-color":"rgb(255, 193, 7)","color":"white","font-size":"3vh"}}><Link to="/login2">Already a User? login instead.</Link></button>
 </form>
 </div>
 </div>
