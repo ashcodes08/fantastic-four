@@ -13,7 +13,7 @@ export default function Footer() {
     </div>
     <div class="col-sm" id="footercol">
     <p style={{"font-size":"3vh","color":"white","font-style":"italic",}} id="footertext">
-      2023@<p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}}>HogwartsEats</p>
+      2023@<p style={{"font-size":"4vh","color":"rgb(255, 193, 7)","font-style":"italic",}}>Verve-Lifestyle</p>
       <p style={{"font-size":"3vh","color":"#cccccc","font-style":"italic",}}>
       Loyalty extends to your well-being too. Come back soon!</p></p>
     </div>
