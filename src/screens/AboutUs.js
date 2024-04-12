@@ -25,7 +25,7 @@ export default function AboutUs() {
         About Us.
         </p>
         <p style={{"font-size":"3vh","color":"#aaaaaa","font-style":"italic",}} id="paymentspageheading">
-        Welcome to the Great Hall! We're serving up magical meals fit for a Hogwarts feast.Our Mission: No Student Goes Hungry! We provide nourishing potions (er, drinks) and delicious treats to fuel your magical studies.From Sorting Hat to Sated Stomach: Your One-Stop Shop for Magical Meals
+        Welcome to the Great Hall! We're serving up luxury !
         </p>
         <div class="container">
   <div class="row align-items-start">
@@ -50,8 +50,8 @@ export default function AboutUs() {
       <div>
       <img src={img3} style={{"width":"15vh"}}></img>
       <p style={{"font-size":"3vh","color":"rgb(255, 193, 7)","font-style":"italic","font-weight":"bold"}}>Slytherin</p>
-    <p style={{"font-size":"4vh","color":"rgb(217, 217, 217)","font-style":"italic","font-weight":"bold"}}>Dhruv Goyal</p>
-    <p style={{"font-size":"3vh","color":"rgb(255, 193, 7)","font-style":"italic","font-weight":"bold"}}>20234060</p>
+    <p style={{"font-size":"4vh","color":"rgb(217, 217, 217)","font-style":"italic","font-weight":"bold"}}>Aditya Choudhary</p>
+    <p style={{"font-size":"3vh","color":"rgb(255, 193, 7)","font-style":"italic","font-weight":"bold"}}>20233023</p>
         </div>
     </div>
     <div class="col-sm " id="paymentspagecols"style={{"box-shadow": "0 4px 8px 0 white, 0 6px 20px 0 white","min-height":"400px"}}>
